@@ -6,6 +6,6 @@ register(
 )
 
 register(
-    id='basic-v2',
-    entry_point='gym_basic.envs:BasicEnv2'
+    id='beearena-v0',
+    entry_point='gym_basic.envs:BeeArena'
 )

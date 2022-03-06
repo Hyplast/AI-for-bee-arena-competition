@@ -3,12 +3,19 @@ from gym import error, spaces, utils
 from gym.utils import seeding
 import numpy as np
 
-class BasicEnv2(gym.Env):
+class BeeArena(gym.Env):
     metadata = {'render.modes': ['human']}
 
     def __init__(self):
-        self.action_space = spaces.Discrete(5)
-        self.observation_space = spaces.Discrete(2)
+        self.action_space = spaces.MultiDiscrete(8,4)
+        self.observation_space = spaces.Discrete(49)
+
+#       self.name = 'beearena'
+#       self.n_players = 2
+#       self.grid_length = 30
+#       self.grid_height = 25
+#       self.num_squares = self.grid_lenght * self.grid_height
+#       self.grid_shape = (self.grid_length, self.grid_height)
 
 # 5 bees, 2 hives, 30-40 flowers
 # Arena is 25 rows * 30 columns

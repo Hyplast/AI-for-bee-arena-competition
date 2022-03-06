@@ -1,11 +1,20 @@
-Example Python Agent
+Mutant Killer Bees -Agent
 ====================
 
 ## Requirements
 
-- Python 2 or 3 (tested with 2.7 and 3.9.9)
+- Python 3.9
+- Gym
+- Stable_baselines3
 
 ## How to use
+
+1. Install pip install gym
+2. pip install stable-baselines3 [on Mac- brew install cmake openmpi]
+3. Install the gym enviroment. pip install -e gym-basic
+
+MTB.zip contains trained RL model. To train a new model run "train.py"
+
 
 The `libagent.py` module mirrors closely the original C version, with the following adjustments for the language:
 
