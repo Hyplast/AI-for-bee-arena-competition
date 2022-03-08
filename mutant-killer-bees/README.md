@@ -3,9 +3,10 @@ Mutant Killer Bees -Agent
 
 ## Requirements
 
-- Python 3.9
-- Gym
-- Stable_baselines3
+- Python 3.9.10
+- Gym (0.19.0)
+(- Cloudpickle (1.6.0) )
+- Stable_baselines3 (1.4.0)
 
 ## How to use
 
