@@ -4,13 +4,18 @@ Mutant Killer Bees -Agent
 ## Requirements
 
 - Python 3.9
-- Gym
-- Stable_baselines3
+- PyTorch 1.81
+- Gym (0.19.0)
+- Stable_baselines3 (1.4)
 
 ## How to use
 
-1. Install pip install gym
-2. pip install stable-baselines3 [on Mac- brew install cmake openmpi]
+# windows
+# install PyTorch (if you have CUDA = Nvidia GPU, you can install CUDA version instead of CPU version)
+# pip3 install torch==1.11.0+cpu torchvision==0.12.0+cpu torchaudio===0.11.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
+1. Install pip install gym=0.19.0
+2. pip install stable-baselines3 [on Mac- brew install cmake openmpi] 
 3. Install the gym enviroment. pip install -e gym-basic
 
 MTB.zip contains trained RL model. To train a new model run "train.py"
