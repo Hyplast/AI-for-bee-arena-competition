@@ -51,7 +51,7 @@ def think(info):
 
     return {
  #       'action': "MOVE",
-        'action': libagent.direction_names[action[1]], 
+        'action': libagent.action_names[action[1]], 
         'direction': libagent.direction_names[action[0]]
 #        'direction': random.choice(libagent.direction_names)
     }
@@ -59,21 +59,21 @@ def think(info):
 def main():
 
 #    Timer calls to check turns don't last over 2 secs
-#
-    # starttime = time.time()
-    # dt = time.time()-starttime
 
-    # sys.path.append("bee-arena/gym_basic/envs")
-    # from bee_arena import BeeArena
+#    starttime = time.time()
+#    dt = time.time()-starttime
 
-    # bee_arena_env = BeeArena()
-    # check_env(bee_arena_env)
+#    sys.path.append("bee-arena/gym_basic/envs")
+#    from bee_arena import BeeArena
+
+#    bee_arena_env = BeeArena()
+#    check_env(bee_arena_env)
     
-    # model = PPO.load("MKB1s")
-    # obs = bee_arena_env.reset()
-    # action, _states = model.predict(obs)
-    # print(action)
-    # print("Turn took %g s"%(dt%60))
+#    model = PPO.load("MKB1s")
+#    obs = bee_arena_env.reset()
+#    action, _states = model.predict(obs)
+#    print(action)
+#    print("Turn took %g s"%(dt%60))
     
     if len(sys.argv) != 3:
         print("Usage: ./agent arena_host arena_port")
