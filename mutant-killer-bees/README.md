@@ -20,11 +20,17 @@ see requirements.txt
 
   venv/Scripts/activate
 
-3. Install correct version of libraries. Check that requirements match requirements.txt.
+3. Install correct version of libraries. Check that requirements match requirements.txt or use the requirements.txt to install exact packages.
 
 pip install gym==0.19.0
+
 pip install stable_baselines3
+
 pip list
+
+OR
+
+pip install -r requirements.txt
 
 4. Train the agent.
 
@@ -34,7 +40,7 @@ python3 train.py
 
 ******* ENJOY *******
 
-# windows native instructions for faster training
+ windows native instructions for faster training
 
  install PyTorch (if you have CUDA = Nvidia GPU, you can install CUDA version instead of CPU version)
  pip3 install torch==1.11.0+cpu torchvision==0.12.0+cpu torchaudio===0.11.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
